@@ -1,0 +1,225 @@
+# Primer programa
+print("Hola mundo desde Python!!")
+
+# Variables en Python
+# Enteros
+edad = 20
+# Float
+precio = 50.5
+# Str
+nombre = "Bruno Diaz"
+# Bool
+bandera = True
+
+# SALIDA
+print("Nombre: ",nombre)
+print("Edad: ", edad)
+print("Precio : " + str(precio))
+
+# ENTRADA
+nombre = input("Introduce tu nombre: ")
+print("Hola "+nombre)
+ 
+# Las cadenas de texto son objetos
+curso ="python para iniciantes"
+
+# Algunos métodos
+print(curso.upper())
+print(curso)
+print(curso.lower())
+print(curso.capitalize())
+
+# Busquedas
+print(curso.find("h"))
+print(curso.find("cia"))
+
+# Reemplazos
+print(curso.replace("para","FOR"))
+print(curso)
+
+# Operador in
+print("para" in curso)
+
+# Operadores matematicos
+print(10 + 5)
+print(10 - 5)
+print(10 * 5)
+print(10 / 4)
+
+# Division entera
+print(10 // 4)
+
+# Modulo - residuo
+print(10 % 3)
+
+# Exponente
+print(2 ** 4)
+
+x = 10 
+x = x + 5
+print(x)
+
+# Operador de asignacion compacto
+y = 20
+y *= 5
+print(y)
+
+# Precedencia
+x = 10 + (3 * 2)
+print(x)
+
+# Expresiones booleanas True o False
+# >, >=, <, <=, ==, !=  Op. relacionales
+
+x = 3 > 2
+print(x)
+
+x = 5 == 3
+print(x)
+
+x = 5 != 3
+print(x)
+
+# and, or , not  Op. logicos
+precio = 25
+print(precio > 20 and precio < 30)
+precio = 5
+precio(precio > 20 or precio < 30)
+
+# Sentencis
+temperatura = int(input("Indica la temperatura: "))
+
+
+if temperatura > 28:
+    print("Esta haciendo calor")
+else:
+    print("hace frio")
+    
+    
+if temperatura > 28:
+    print("Esta haciendo calor")
+elif temperatura > 20:
+    print("Es un dia agradable")
+elif temperatura > 10:
+    print("Hace un poco de frio")
+else:
+    print("hace frio , brrrr")
+    
+print("Proceso concluido")
+
+
+# Bucles
+contador = 12
+while (contador <= 20):
+    print(contador)
+    contador += 1
+
+i = 1
+while (i <= 10):
+    print(i * "#")
+    i +=1
+	
+# Listas
+
+frutas = ['Manzana','Fresa','naranjas','Pera','Maracuyá']
+print(frutas)
+print(frutas[0])
+print(frutas[4])
+print(frutas[-2])
+print(frutas[1:4])
+
+
+# Metdos de listas
+numeros = [1,2,3,4,5]
+
+# Adicionar elementos a una lista
+numeros.append(6)
+print(numeros)
+
+# Insertar elementos en una posicion determinada
+numeros.insert(0,-1)
+print(numeros)
+
+numeros.insert(1,0)
+print(numeros)
+
+# Elimina un elemento en su primera aparicion
+numeros.remove(1)
+print(numeros)
+
+# Verificar si un elemento se encuentra en la lista
+print(4 in numeros)
+
+# Tamanño de la lista
+print(len(numeros))
+
+# Elimina el contenido de la lista
+numeros.clear()
+print(numeros)
+
+# Objeto range
+
+numeros = range(5)
+print(numeros)
+
+for item in numeros:
+    print(item)
+    
+for item in range(5,10):
+    print(item)
+    
+for item in range(10,20,2):
+    print(item)
+	
+# Diccionarios -> Almacen a pares de clave-valor
+mi_diccionario = {'nombre':'Bruno Diaz','edad':25,'ciudad':'La Paz'}
+print(mi_diccionario)
+
+# Acceder a un valor
+print(mi_diccionario['nombre'])
+print(mi_diccionario['ciudad'])
+
+# Agregar elementos
+mi_diccionario['profesion'] = 'Ingeniero'
+print(mi_diccionario)
+
+# Eliminar un elemento
+del mi_diccionario['ciudad']
+print(mi_diccionario)
+
+# Obtener claves del diccionario
+print(mi_diccionario.keys())
+
+# Obtener valores del diccionario
+print(mi_diccionario.values())
+
+# Verificar si una clave existe
+if 'ciudad' in mi_diccionario:
+    print("Clave encontrada")
+    
+# Recorrido de un diccionario
+for clave, valor in mi_diccionario.items():
+    print("[Clave: ]",clave," [Valor:] ",valor)
+	
+
+# Funciones -> Bloques de codigo que realizan una tarea y son reutilizables
+def saludar():
+	print("Hola, bienvenido al curso de Python")
+	
+# Funciones que devuelven valores
+def suma(x,y):
+    return x + y
+
+def producto(x,y):
+    return x * y
+
+resultado = suma(5,7)
+print(resultado)
+
+resul = producto(6,8)
+print("El producto es: "+str(resul))
+
+
+
+
+
